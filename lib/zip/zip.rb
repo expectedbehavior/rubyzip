@@ -612,12 +612,10 @@ module Zip
         case (@externalFileAttributes >> 28)
         when 04
           @ftype = :directory
-        when 010
-          @ftype = :file
         when 012
           @ftype = :link
         else
-          raise ZipInternalError, "unknown file type #{'0%o' % (@externalFileAttributes >> 28)}"
+          @ftype = :file
         end
       else
         if name_is_directory?
