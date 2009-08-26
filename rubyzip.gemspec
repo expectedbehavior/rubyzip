@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
    s.name = %q{rubyzip}
-   s.version = "0.9.1.1"
+   s.version = "0.9.1.2"
    s.date = %q{2009-03-30}
    s.authors = ["Thomas Sondergaard"]
    s.email = %q{jason@expectedbehavior.com}
